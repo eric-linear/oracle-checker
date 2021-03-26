@@ -29,9 +29,3 @@ async function exampleGetReferenceData() {
     await new Promise((r) => setTimeout(r, 30_000));
   }
 })();
-
-function hexToString(str: string)
-{
-    const buf = new Buffer(str, 'hex');
-    return buf.toString('utf8');
-}
