@@ -16,7 +16,7 @@ async function exampleGetReferenceData() {
         StdReferenceBasicAbi,
         provider
       );
-    const data = await bandImpl.getReferenceData("VET","USD")
+    const data = await bandImpl.getReferenceData("BNB","USD")
     const buf = Buffer.from(data.lastUpdatedBase._hex, 'hex');
     //console.log(ethers.BigNumber.from(data.lastUpdatedBase._hex).toNumber())
     const dateTime = new Date(ethers.BigNumber.from(data.lastUpdatedBase._hex).toNumber() * 1000)
